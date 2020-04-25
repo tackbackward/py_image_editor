@@ -6,7 +6,7 @@ from PIL import Image
 def rotateimage():
     image = (fname)
     msg = "How do I edit this image?"
-    choices = ["Rotate","Flip"]
+    choices = ["Rotate","Flip","Greyscale"]
     reply = easygui.buttonbox(msg, image=image, choices=choices)
     if reply == "Rotate":
         image = Image.open(fname)
@@ -19,6 +19,13 @@ def rotateimage():
         flippedimage = image.transpose(Image.FLIP_LEFT_RIGHT)
         flippedimage.save(fname)
         rotateimage()
+
+    if reply == "Greyscale":
+        image = Image.open(fname)
+        greyimage = image.convert('L')
+        greyimage.save(fname)
+        rotateimage()
+
 
 
 
