@@ -7,6 +7,6 @@ pip3 install easygui\
 pip3 install sys
 
 You can use this program for every purpose ever I don't care if you use it.\
-(Any requests or issues please tell me about them)\
+(Any requests or issues please tell me about them)
 ## To install it go to releases.
 
