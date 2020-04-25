@@ -67,8 +67,9 @@ def start():
         fname = sys.argv[1]
 
     if not fname:
-        sg.popup("Ok", "No filename supplied")
-        start()
+        sg.popup("Ok", "No file")
+        
+
 
     else:
         rotateimage(fname)
